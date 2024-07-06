@@ -1,5 +1,5 @@
-import SearchInput from "./SearchInput"
 import { FaCrown, FaStar } from "react-icons/fa"
+import data from '../../Data/flyer_data.json'
 
 export default function Nav() {
   return (
@@ -23,8 +23,7 @@ export default function Nav() {
         </article>
 
         <article className="flex flex-col z-50">
-          <i>PRECIO EXCLUSIVO PARA</i>
-          <i>COMPRA MAYOR A $50.000</i>
+          <i>{data.title}</i>
         </article>
       </section>
       <div className="absolute bottom-0 z-10 h-14 w-full bg-red-500"></div>

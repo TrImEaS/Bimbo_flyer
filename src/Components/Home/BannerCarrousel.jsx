@@ -37,12 +37,11 @@ export default function BannerCarousel() {
   return (
     <section>
       {loadingImages 
-      ? 
-      (
+      ? (
         <Spinner/>
       ) 
-      : 
-      (
+      
+      : (
         <Carousel 
           autoPlay={5000}
           infiniteLoop
