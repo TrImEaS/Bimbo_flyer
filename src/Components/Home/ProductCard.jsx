@@ -16,7 +16,7 @@ export default function ProductCard({ product }) {
         <img 
           className='h-[80px] w-[135px] yellow-filter' 
           src={'https://technologyline.com.ar/others/Images/priceImg.png'}/>
-        <span className="absolute text-3xl top-6 font-semibold">${product.precio}</span>
+        <span className="absolute text-3xl top-6 font-semibold">${parseInt(product.precio)}</span>
       </article>
     </section>
   )

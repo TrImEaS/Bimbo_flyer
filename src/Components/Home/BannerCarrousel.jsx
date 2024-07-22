@@ -38,7 +38,7 @@ export default function BannerCarousel() {
     <section>
       {loadingImages 
       ? (
-        <Spinner/>
+        <div className='w-full pt-10'><Spinner/></div>
       ) 
       
       : (
