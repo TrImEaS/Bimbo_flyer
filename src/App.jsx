@@ -1,6 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from "react"
-import { Admin, Home } from './Pages/Pages.jsx'
+import { Home } from './Pages/Pages.jsx'
 
 export default function App() {
   return (
@@ -8,7 +8,6 @@ export default function App() {
       <ScrollToTopOnLocationChange />
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/admin_page" element={<Admin/>}/>
       </Routes>
     </main>
   )

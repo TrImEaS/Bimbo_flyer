@@ -1,4 +1,5 @@
 export default function ProductCard({ product }) {
+  console.log(product)
   return(
     <section className="relative bg-[#fafafa] rounded-xl border-2 flex flex-col h-[300px] w-[400px] p-5">
       <article className="flex flex-col h-full w-full max-h-[198px] justify-between">
@@ -6,7 +7,7 @@ export default function ProductCard({ product }) {
         <span className="text-base font-bold">{product.descripcion}</span>
         <img 
           className="h-full w-full object-fill" 
-          src={`https://technologyline.com.ar/others/Images/Products-Images/product-${product.id}.jpg`}/>      
+          src={product.imagen}/>      
       </article>
 
       <article className='absolute right-[-20px] flex justify-center top-[-20px]'>

@@ -5,7 +5,7 @@ export default function Products() {
   const [data, setData] = useState([])
 
   useEffect(()=> {
-    fetch('https://outletgolosinas.com.ar/BIMBO/systemoperative_2024ab/functions/flyer_data/flyer_data.php')
+    fetch('https://outletgolosinas.com.ar/admin_flyer/admin_page/getFlyerData.php')
     .then(res => { 
       if(!res.ok) {
         throw error('Error al traer datos')
