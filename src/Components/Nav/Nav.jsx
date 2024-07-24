@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
-import { FaCrown, FaStar } from "react-icons/fa"
+import { FaStar } from "react-icons/fa"
+import logo from '../../Assets/Logos/logo.jpg'
 
 export default function Nav() {
   const [title, setTitle] = useState([])
@@ -23,10 +24,8 @@ export default function Nav() {
     <nav className="relative z-50 flex w-full py-3 justify-center gap-x-10 px-8 items-center bg-[#fafafa]">
       <section className="w-fit z-50 flex gap-x-20 items-center">
         {/*Logo*/}
-        <a className="bg-blue-600 h-[150px] w-[150px] flex-col justify-center rounded-full flex items-center max-xl:justify-center border-4 border-blue-700" href="#">
-          <FaCrown className="text-4xl text-yellow-400"/>
-          <span className="font-bold text-white text-4xl">Outlet</span>
-          <span className="text-[9px] text-white">PANIFICADOS Y GOLOSINAS</span>
+        <a className="bg-[#1c4ba8] h-[150px] w-[150px] flex-col justify-center rounded-full flex items-center max-xl:justify-center border-4 border-blue-700" href="#">
+          <img src={logo} className="w-full h-full object-contain rounded-full" alt="" />
         </a>
       </section>
 
@@ -39,7 +38,7 @@ export default function Nav() {
           <FaStar className="text-yellow-400 text-3xl"/>
         </article>
 
-        <article className="flex flex-col z-50">
+        <article className="flex text-center flex-col z-50">
           <i>{title}</i>
         </article>
       </section>
