@@ -1,7 +1,24 @@
+import { useEffect, useState } from "react"
 import { FaCrown, FaStar } from "react-icons/fa"
-import data from '../../Data/flyer_data.json'
 
 export default function Nav() {
+  const [title, setTitle] = useState([])
+
+  useEffect(()=> {
+    fetch('https://outletgolosinas.com.ar/admin_flyer/admin_page/getFlyerData.php')
+    .then(res => { 
+      if(!res.ok) {
+        throw error('Error al traer datos')
+      }
+      else{
+        return res.json()
+      }
+    })
+    .then(data => {
+      setTitle(data.title)
+    })
+  },[])
+
   return (
     <nav className="relative z-50 flex w-full py-3 justify-center gap-x-10 px-8 items-center bg-[#fafafa]">
       <section className="w-fit z-50 flex gap-x-20 items-center">
@@ -23,7 +40,7 @@ export default function Nav() {
         </article>
 
         <article className="flex flex-col z-50">
-          <i>{data.title}</i>
+          <i>{title}</i>
         </article>
       </section>
       <div className="absolute bottom-0 z-10 h-14 w-full bg-red-500"></div>

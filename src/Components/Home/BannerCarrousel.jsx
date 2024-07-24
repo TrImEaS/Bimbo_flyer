@@ -1,15 +1,14 @@
-import { useEffect, useState } from 'react'
-import { Carousel } from 'react-responsive-carousel'
-import Spinner from '../Spinner'
+import { useEffect, useState } from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import Spinner from '../Spinner';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function BannerCarousel() {
-  const [banners, setBanners] = useState([])
-  const [loadingImages, setLoadingImages] = useState(true)
+  const [banners, setBanners] = useState([]);
+  const [loadingImages, setLoadingImages] = useState(true);
 
   useEffect(() => {
-    const bannerPaths = [];
-    
+    // Function to check if an image exists
     const imageExists = (url) => {
       return new Promise((resolve) => {
         const img = new Image();
@@ -19,31 +18,46 @@ export default function BannerCarousel() {
       });
     };
 
-    const loadImages = async () => {
-      for (let i = 1; i <= 3; i++) {
-        const path = `https://technologyline.com.ar/others/Images/Home-Banners/banner${i}.jpg`;
-        if (await imageExists(path)) {
-          bannerPaths.push(path);
+    // Function to fetch banners and validate images
+    const fetchBanners = async () => {
+      try {
+        const res = await fetch('https://outletgolosinas.com.ar/admin_flyer/admin_page/getBanners.php');
+        if (!res.ok) {
+          throw new Error('Error al traer datos');
         }
+        const data = await res.json();
+        console.log(data);
+
+        // Filter out banners with invalid or empty image paths
+        const validBanners = await Promise.all(data.map(async (banner) => {
+          const { image_path } = banner;
+          if (image_path && await imageExists(image_path)) {
+            return banner;
+          }
+          return null;
+        }));
+
+        // Remove null entries
+        setBanners(validBanners.filter(banner => banner !== null));
+        setLoadingImages(false);
+      } catch (error) {
+        console.error('Fetch error:', error);
+        setLoadingImages(false);
       }
-      setBanners(bannerPaths);
-      setLoadingImages(false);
     };
 
-    loadImages();
+    fetchBanners();
   }, []);
-
 
   return (
     <section>
-      {loadingImages 
-      ? (
-        <div className='w-full pt-10'><Spinner/></div>
-      ) 
-      
-      : (
+      {loadingImages ? (
+        <div className='w-full pt-10'>
+          <Spinner />
+        </div>
+      ) : (
         <Carousel 
-          autoPlay={5000}
+          autoPlay
           infiniteLoop
           stopOnHover
           transitionTime={300}
@@ -54,7 +68,7 @@ export default function BannerCarousel() {
           {banners.map((banner, index) => (
             <div key={index} className="w-full h-full">
               <img 
-                src={banner}
+                src={banner.image_path}
                 className="max-h-[500px] h-full w-full object-fill select-none"
                 loading="eager"
                 alt={`Banner ${index + 1}`}
@@ -62,10 +76,11 @@ export default function BannerCarousel() {
             </div>
           ))}
         </Carousel>
-      )}    
+      )}
     </section>
-  )
+  );
 }
+
 
 
 // const mobileScreen = 768

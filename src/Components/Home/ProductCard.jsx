@@ -1,5 +1,4 @@
 export default function ProductCard({ product }) {
-  console.log(product)
   return(
     <section className="relative bg-[#fafafa] rounded-xl border-2 flex flex-col h-[300px] w-[400px] p-5">
       <article className="flex flex-col h-full w-full max-h-[198px] justify-between">

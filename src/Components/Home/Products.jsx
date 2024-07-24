@@ -3,6 +3,7 @@ import ProductCard from "./ProductCard"
 
 export default function Products() {
   const [data, setData] = useState([])
+  const [banners, setBanners] = useState([])
 
   useEffect(()=> {
     fetch('https://outletgolosinas.com.ar/admin_flyer/admin_page/getFlyerData.php')
@@ -16,7 +17,6 @@ export default function Products() {
     })
     .then(data => {
       setData(data)
-      console.log(data)
     })
   },[])
 
@@ -35,7 +35,7 @@ export default function Products() {
         className={`flex w-full justify-center gap-x-20 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center first-row-img z-10`}
         style={{ 
           backgroundColor: `#${data.bg_colors[0].color}`,
-          backgroundImage: "url('https://technologyline.com.ar/others/Images/Rows/fila-1.jpg')",
+          // backgroundImage: `url('${banners[0]}')`,
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
