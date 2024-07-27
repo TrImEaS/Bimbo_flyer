@@ -3,7 +3,6 @@ import ProductCard from "./ProductCard"
 
 export default function Products() {
   const [data, setData] = useState([])
-  const [banners, setBanners] = useState([])
 
   useEffect(()=> {
     fetch('https://outletgolosinas.com.ar/admin_flyer/admin_page/getFlyerData.php')
@@ -30,9 +29,9 @@ export default function Products() {
   const fourthRow = data.products.slice(6, 8)
 
   return(
-    <section className="flex flex-col w-4/5 h-full min-h-[700px] bg-white">
+    <section className="flex flex-col w-4/5 max-lg:w-full h-full min-h-[700px] bg-white">
       <article 
-        className={`flex w-full justify-center gap-x-20 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center first-row-img z-10`}
+        className={`flex w-full justify-center max-[780px]:flex-col gap-x-20 gap-y-10 py-10 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center first-row-img z-10`}
         style={{ 
           backgroundColor: `#${data.bg_colors[0].color}`,
           // backgroundImage: `url('${banners[0]}')`,
@@ -48,10 +47,10 @@ export default function Products() {
       </article>
 
       <article 
-        className={`flex w-full justify-center gap-x-20 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center second-row-img z-10`}
+        className={`flex w-full justify-center max-[780px]:flex-col gap-x-20 gap-y-10 py-10 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center second-row-img z-10`}
         style={{ 
           backgroundColor: `#${data.bg_colors[1].color}`,
-          backgroundImage: "url('https://technologyline.com.ar/others/Images/Rows/fila-2.jpg')",
+          // backgroundImage: "url('https://technologyline.com.ar/others/Images/Rows/fila-2.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}
@@ -64,10 +63,10 @@ export default function Products() {
       </article>
 
       <article 
-        className={`flex w-full justify-center gap-x-20 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center third-row-img z-10`}
+        className={`flex w-full justify-center max-[780px]:flex-col gap-x-20 gap-y-10 py-10 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center third-row-img z-10`}
         style={{ 
           backgroundColor: `#${data.bg_colors[2].color}`,
-          backgroundImage: "url('https://technologyline.com.ar/others/Images/Rows/fila-3.jpg')",
+          // backgroundImage: "url('https://technologyline.com.ar/others/Images/Rows/fila-3.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}>
@@ -79,10 +78,10 @@ export default function Products() {
       </article>
 
       <article 
-        className={`flex w-full justify-center gap-x-20 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center fourth-row-img z-10`}
+        className={`flex w-full justify-center max-[780px]:flex-col gap-x-20 gap-y-10 py-10 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center fourth-row-img z-10`}
         style={{ 
           backgroundColor: `#${data.bg_colors[3].color}`,
-          backgroundImage: "url('https://technologyline.com.ar/others/Images/Rows/fila-4.jpg')",
+          // backgroundImage: "url('https://technologyline.com.ar/others/Images/Rows/fila-4.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center"
         }}>
