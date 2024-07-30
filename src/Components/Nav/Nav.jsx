@@ -25,10 +25,10 @@ export default function Nav() {
       <header className="absolute top-0 justify-center gap-x-4 text-red-50 flex items-center px-5 w-full bg-gradient-to-tl from-blue-500 to-red-500 h-14">
         <h1 className="text-lg font-bold">Seguinos en nuestras redes</h1>
         <div className="flex gap-3 items-center">
-          <a target="_blank" href="https://www.instagram.com/outlet_de_golosinas?igsh=MXJqc3JvYW85Zm5heg==">
+          <a className="duration-300 hover:scale-105" target="_blank" href="https://www.instagram.com/outlet_de_golosinas?igsh=MXJqc3JvYW85Zm5heg==">
             <FaInstagram className="text-2xl font-bold"/>
           </a>
-          <a target="_blank" href="https://www.tiktok.com/@outletdegolosinas?_t=8oLumZJK6a5&_r=1">
+          <a className="duration-300 hover:scale-105" target="_blank" href="https://www.tiktok.com/@outletdegolosinas?_t=8oLumZJK6a5&_r=1">
             <FaTiktok className="text-2xl font-bold"/>
           </a>
         </div>
