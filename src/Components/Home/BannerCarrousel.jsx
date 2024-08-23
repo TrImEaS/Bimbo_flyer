@@ -62,6 +62,8 @@ export default function BannerCarousel() {
           </div>
         ))}
       </Carousel>
-    ) : <div>No banners available</div> // Mensaje cuando no hay banners disponibles
+    ) : '' // Mensaje cuando no hay banners disponibles
   );
 }
+
+{/* <div>No banners available</div> */}

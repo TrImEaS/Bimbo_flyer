@@ -2,10 +2,10 @@ import priceImg from '../../Assets/Logos/priceImg.png'
 
 export default function ProductCard({ product }) {
   return(
-    <section className="relative bg-[#fafafa] rounded-xl border-2 flex flex-col h-[400px] w-[400px] max-sm:w-[85%] p-5">
+    <section className="relative bg-[#fafafa] rounded-xl border-2 flex flex-col max-h-[400px] max-w-[400px] w-[400px] h-[400px] max-sm:w-[85%] p-5">
       <article className="flex flex-col h-full w-full justify-between">
-        <span className="text-red-500 text-lg font-bold">{product.marca}</span>
-        <span className="text-base font-bold">{product.descripcion}</span>
+        <span className="text-red-500 h-[10%] text-lg font-bold">{product.marca}</span>
+        <span className="text-base font-bold h-[10%]">{product.descripcion}</span>
         <img 
           className="h-full w-full aspect-square select-none" 
           src={product.imagen}/>      

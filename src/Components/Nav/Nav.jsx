@@ -35,7 +35,7 @@ export default function Nav() {
         </div>
       </header>
 
-      <section className="w-full justify-center z-20 h-full min-h-[200px] flex gap-x-20 items-center">
+      <section className="w-full justify-center z-20 h-full min-h-[150px] flex gap-x-20 items-center">
         {/*Logo*/}
 
         <div className="absolute z-10 overflow-hidden h-full w-full">
