@@ -38,23 +38,30 @@ export default function Products() {
         backgroundRepeat: "no-repeat"
       }}
     >
+
       <article 
-        className={`flex w-3/4 max-md:w-full max-[1200px]:w-full justify-center max-[780px]:flex-col gap-x-20 gap-y-14 py-12 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center first-row-img z-10`}
+        className={`flex w-3/4 max-md:w-full max-[1200px]:w-full justify-center flex-col pt-5 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center z-10`}
         style={{ 
           backgroundColor: `#${data.bg_colors[0].color}`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        {firstRow.map(product => (
-          <ProductCard 
-            key={product.id}
-            product={product}/>
-        ))}
-      </article>
+        <div className="w-full flex justify-center items-center">
+          <h2 className="underline font-bold text-white">PRODUCTOS DESTACADOS LISTA MINORISTA</h2>
+        </div>
+        
+        <div className={`flex w-full max-[1200px]:w-full justify-center gap-x-20 gap-y-14 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center first-row-img z-10 sm:pt-10`}>
+          {firstRow.map(product => (
+            <ProductCard 
+              key={product.id}
+              product={product}/>
+          ))}
+        </div>
+        </article>
 
       <article 
-        className={`flex w-3/4 max-md:w-full max-[1200px]:w-full justify-center max-[780px]:flex-col gap-x-20 gap-y-14 py-12 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center second-row-img z-10`}
+        className={`flex w-3/4 max-md:w-full max-[1200px]:w-full justify-center gap-x-20 gap-y-14 sm:py-12 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center second-row-img z-10`}
         style={{ 
           backgroundColor: `#${data.bg_colors[1].color}`,
           backgroundSize: "cover",
@@ -69,7 +76,7 @@ export default function Products() {
       </article>
 
       <article 
-        className={`flex w-3/4 max-md:w-full max-[1200px]:w-full justify-center max-[780px]:flex-col gap-x-20 gap-y-14 py-12 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center third-row-img z-10`}
+        className={`flex w-3/4 max-md:w-full max-[1200px]:w-full justify-center gap-x-20 gap-y-14 sm:py-12 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center third-row-img z-10`}
         style={{ 
           backgroundColor: `#${data.bg_colors[2].color}`,
           backgroundSize: "cover",
@@ -83,7 +90,7 @@ export default function Products() {
       </article>
 
       <article 
-        className={`flex w-3/4 max-md:w-full max-[1200px]:w-full justify-center max-[780px]:flex-col gap-x-20 gap-y-14 py-12 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center fourth-row-img z-10`}
+        className={`flex w-3/4 max-md:w-full max-[1200px]:w-full justify-center gap-x-20 gap-y-14 sm:py-12 max-xl:gap-x-0 max-xl:justify-around min-h-[400px] h-full items-center fourth-row-img z-10`}
         style={{ 
           backgroundColor: `#${data.bg_colors[3].color}`,
           backgroundSize: "cover",

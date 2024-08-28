@@ -22,7 +22,7 @@ export default function Nav() {
   },[])
 
   return (
-    <nav className="relative z-50 flex flex-col w-full max-sm:pb-0 gap-x-10 max-sm:px-0 items-center bg-[#fafafa]">
+    <nav className="relative z-50 bg-red-500 flex flex-col w-full gap-x-10 max-sm:px-0 items-center sm:pb-5">
       <header className="z-50 top-0 justify-center gap-x-4 text-red-50 flex items-center px-5 w-full bg-gradient-to-tl from-blue-500 to-red-500 h-14">
         <h1 className="text-lg font-bold">Seguinos en nuestras redes</h1>
         <div className="flex gap-3 items-center">
@@ -47,7 +47,7 @@ export default function Nav() {
         </a>
       </section>
 
-      <section className="w-[500px] max-sm:w-full max-sm:text-3xl z-50 flex flex-col justify-center items-center text-4xl font-extrabold text-shadow gap-y-3">
+      <section className="w-[500px] pt-5 max-sm:pt-0 max-sm:w-full max-sm:text-3xl z-50 flex flex-col justify-center items-center text-4xl font-extrabold text-shadow gap-y-3">
         <article className="flex gap-x-5 items-end">
           <FaStar className="text-yellow-400 text-3xl"/>
           <FaStar className="text-yellow-400 text-4xl"/>
@@ -56,11 +56,12 @@ export default function Nav() {
           <FaStar className="text-yellow-400 text-3xl"/>
         </article>
 
-        <article className="flex text-center flex-col max-sm:bg-red-500 max-sm:justify-center max-sm:h-fit max-sm:py-5 max-sm:w-full z-50 max-sm:px-8">
+        <article className="flex text-center bg-red-500 sm:bg-transparent flex-col w-full max-sm:justify-center max-sm:h-fit max-sm:py-5 max-sm:w-full z-50 max-sm:px-8">
           <i>{title}</i>
         </article>
       </section>
-      <div className="absolute bottom-0 max-sm:hidden z-30 h-14 w-full bg-red-500"></div>
+      {/* <div className="absolute bottom-0 max-sm:hidden z-30 h-14 w-full bg-red-500">
+      </div> */}
     </nav>
   )
 }

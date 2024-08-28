@@ -83,7 +83,7 @@ export default function Footer() {
   };
 
   return (
-    <section className="relative flex bg-blue-600 flex-col max-sm:px-5 justify-center items-center gap-3 w-full text-white py-5">
+    <section className="relative flex bg-blue-600 flex-col max-sm:px-5 justify-center items-center gap-3 w-full text-white py-5 ">
       <div className="flex gap-3 z-10 max-[780px]:flex-col">
         {/*Locations*/}
         <section className="flex flex-col w-full gap-3">
@@ -111,6 +111,12 @@ export default function Footer() {
               <h2 className="text-lg font-bold text-white">MERCADO CENTRAL LOCAL 121 GOLOSINAS</h2>
             </div>
           </a>
+          <a target="_blank" href="https://www.google.com/maps/place/Federico+Lacroze+4171,+C1427+EDG,+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5864206,-58.4576819,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb5e4f9e7f8c1:0xd5e95eec4a2db45!8m2!3d-34.586425!4d-58.455107!16s%2Fg%2F11c2gxsbvc?entry=ttu&g_ep=EgoyMDI0MDgyNi4wIKXMDSoASAFQAw%3D%3D" className="flex hover:scale-105 duration-300 items-center max-w-[400px] w-full p-4 rounded-lg shadow-lg border-2 gap-2">
+            <img aria-hidden="true" alt="location icon" src={mobile_icon} className="w-14 h-14" />
+            <div className="flex-1">
+              <h2 className="text-lg font-bold text-white">FEDERICO LACROZE 4171, CHACARITA</h2>
+            </div>
+          </a>
           <a target="_blank" href="https://www.google.com/maps/place/Guillermo+Marconi+3496,+B1765LEL+Isidro+Casanova,+Provincia+de+Buenos+Aires/@-34.7125326,-58.5959213,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcc67bf13fa3b7:0xcb6e74c8058a287!8m2!3d-34.712537!4d-58.5933464?entry=ttu" className="flex hover:scale-105 duration-300 items-center max-w-[400px] w-full p-4 rounded-lg shadow-lg border-2 gap-2">
             <img aria-hidden="true" alt="location icon" src={mobile_icon} className="w-14 h-14" />
             <div className="flex-1">
@@ -130,7 +136,7 @@ export default function Footer() {
           <a target="_blank" href="https://wa.me/+5491157999632?text=Hola me comunico desde la pagina de OutletGolosinas." className="flex duration-300 hover:scale-105 items-center max-w-[400px] w-full gap-2 p-4 rounded-lg shadow-lg border-2">
             <FaWhatsapp className="text-green-500 text-5xl font-bold"/>
             <div className="flex-1">
-              <h2 className="text-lg font-bold">GREGORIO DE LAFERRE</h2>
+              <h2 className="text-lg font-bold">GREGORIO DE LAFERRERE</h2>
               <p className="text-xl">11-5799-9632</p>
             </div>
           </a>
@@ -153,6 +159,20 @@ export default function Footer() {
             <div className="flex-1">
               <h2 className="text-lg font-bold">MERCADO CENTRAL PANIFICADOS</h2>
               <p className="text-xl">11-5709-2539</p>
+            </div>
+          </a>
+          <a target="_blank" href="https://wa.me/+5491157092539?text=Hola me comunico desde la pagina de OutletGolosinas." className="flex duration-300 hover:scale-105 items-center max-w-[400px] w-full gap-2 p-4 rounded-lg shadow-lg border-2">
+            <FaWhatsapp className="text-green-500 text-5xl font-bold"/>
+            <div className="flex-1">
+              <h2 className="text-lg font-bold">CHACARITA</h2>
+              <p className="text-xl">11-5809-7645</p>
+            </div>
+          </a>
+          <a target="_blank" href="https://wa.me/+5491155027692?text=Hola me comunico desde la pagina de OutletGolosinas." className="flex duration-300 hover:scale-105 items-center max-w-[400px] w-full gap-2 p-4 rounded-lg shadow-lg border-2">
+            <FaWhatsapp className="text-green-500 text-5xl font-bold"/>
+            <div className="flex-1">
+              <h2 className="text-lg font-bold">ISIDRO CASANOVA</h2>
+              <p className="text-xl">11-5502-7692</p>
             </div>
           </a>
         </section>

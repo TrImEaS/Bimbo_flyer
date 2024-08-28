@@ -39,30 +39,36 @@ export default function BannerCarousel() {
   const shouldShowCarousel = bannersToShow.length > 0;
 
   return (
-    shouldShowCarousel ? (
-      <Carousel
-        autoPlay
-        interval={5000}
-        showStatus={false}
-        infiniteLoop
-        transitionTime={500}
-        showThumbs={false}
-        stopOnHover
-        swipeable
-        emulateTouch
-      >
-        {bannersToShow.map((banner, index) => (
-          <div key={index} className="w-full h-full min-h-[200px] max-h-[550px]">
-            <img
-              src={banner.IMAGE_PATH}
-              className="h-full w-full object-fill select-none"
-              loading="eager"
-              alt={`banner ${index + 1}`}
-            />
-          </div>
-        ))}
-      </Carousel>
-    ) : '' // Mensaje cuando no hay banners disponibles
+    <div className='flex flex-col w-full items-center bg-yellow-400 gap-3 sm:pb-3'>
+      {shouldShowCarousel ? (
+        <Carousel
+          autoPlay
+          interval={5000}
+          showStatus={false}
+          infiniteLoop
+          transitionTime={500}
+          showThumbs={false}
+          stopOnHover
+          swipeable
+          emulateTouch
+        >
+          {bannersToShow.map((banner, index) => (
+            <div key={index} className="w-full h-full min-h-[200px] max-h-[550px]">
+              <img
+                src={banner.IMAGE_PATH}
+                className="h-full w-full object-fill select-none"
+                loading="lazy"
+                alt={`banner ${index + 1}`}
+              />
+            </div>
+          ))}
+        </Carousel>
+      ) : ''}
+      <section className="z-30 py-2 px-10 max-[770px]:my-2 max-sm:my-0 max-sm:mb-3 rounded-xl hover:scale-105 cursor-pointer duration-300 bg-red-500 flex flex-col text-center text-white text-xl h-full w-fit sm:w-full sm:max-w-[400px]">
+        <span>Hace click aquí y explorá</span>
+        <span>nuestra tienda online!</span>
+      </section>
+    </div>
   );
 }
 

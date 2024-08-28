@@ -2,24 +2,21 @@ import priceImg from '../../Assets/Logos/priceImg.png'
 
 export default function ProductCard({ product }) {
   return(
-    <section className="relative bg-[#fafafa] rounded-xl border-2 flex flex-col max-h-[400px] max-w-[400px] w-[400px] h-[400px] max-sm:w-[85%] p-5">
-      <article className="flex flex-col h-full w-full justify-between">
-        <span className="text-red-500 h-[10%] text-lg font-bold">{product.marca}</span>
-        <span className="text-base font-bold h-[10%]">{product.descripcion}</span>
+    <section className="relative bg-[#fafafa] rounded-xl border-2 flex flex-col h-[450px] w-full 
+    max-sm:scale-[.85] max-[850px]:w-[300px] max-sm:h-[350px] max-w-[400px] p-3 px-1 justify-center items-center">
+      <article className="flex flex-col h-[80%] w-full items-center justify-between">
         <img 
-          className="h-full w-full aspect-square select-none" 
+          className="h-[80%] w-full select-none" 
           src={product.imagen}/>      
+        <span className="h-[10%] text-lg font-bold w-full text-center max-sm:text-base max-sm:text-[14px] pt-1">{product.marca}</span>
+        <span className="text-base h-[10%] w-full text-center max-sm:text-xs">{product.descripcion}</span>
       </article>
 
-      <article className='absolute right-[-30px] -rotate-6 flex justify-center top-[-45px] select-none'>
-        <span className='absolute z-10 left-[28px] text-[21px] font-extrabold text-shadow'>
-          OFERTA
-        </span>
-        <img 
-          className='h-[90px] w-[155px] yellow-filter' 
-          src={priceImg}/>
-        <span className="absolute text-[22px] top-6 font-semibold">${parseFloat(product.precio).toFixed(2)}</span>
-        <span className="absolute text-sm top-[55px] font-semibold">Cada uno</span>
+      <article className='scale-[.8] bg-yellow-300 w-full max-w-[250px] -skew-x-6 flex justify-center items-center h-[20%]'>
+        <div className='transform skew-x-6 flex flex-col justify-center items-center'>
+          <span className="text-3xl font-semibold">${parseFloat(product.precio).toFixed(2)}</span>
+          <span className="text-sm font-semibold">Cada uno</span>
+        </div>
       </article>
     </section>
   )
