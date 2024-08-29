@@ -57,17 +57,17 @@ export default function BannerCarousel() {
               <img
                 src={banner.IMAGE_PATH}
                 className="h-full w-full object-fill select-none"
-                loading="lazy"
+                loading="eager"
                 alt={`banner ${index + 1}`}
               />
             </div>
           ))}
         </Carousel>
       ) : ''}
-      <section className="z-30 py-2 px-10 max-[770px]:my-2 max-sm:my-0 max-sm:mb-3 rounded-xl hover:scale-105 cursor-pointer duration-300 bg-red-500 flex flex-col text-center text-white text-xl h-full w-fit sm:w-full sm:max-w-[400px]">
-        <span>Hace click aquí y explorá</span>
-        <span>nuestra tienda online!</span>
-      </section>
+      <a href='https://outletdegolosinas.ecu.red/?v=1724442209792#/place-detail-page' target='_blank' className="z-30 py-2 px-10 max-[770px]:my-2 max-sm:my-0 max-sm:mb-3 rounded-xl hover:scale-105 cursor-pointer duration-300 bg-red-500 flex flex-col text-center text-white text-lg sm:text-xl h-full w-fit sm:w-full sm:max-w-[400px]">
+        <span>HAZ CLICK AQUÍ Y EXPLORÁ</span>
+        <span>NUESTRO CATALOGO MAYORISTA!</span>
+      </a>
     </div>
   );
 }

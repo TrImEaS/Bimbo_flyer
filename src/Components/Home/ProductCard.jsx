@@ -1,5 +1,3 @@
-import priceImg from '../../Assets/Logos/priceImg.png'
-
 export default function ProductCard({ product }) {
   return(
     <section className="relative bg-[#fafafa] rounded-xl border-2 flex flex-col h-[450px] w-full 
