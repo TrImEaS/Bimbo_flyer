@@ -1,8 +1,3 @@
-# React + Vite
+#GestiónS (ERP or Enterprise Resource Planning System)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+In this app, I handled the backend (with PHP), the frontend (React.js), and some corrections or additions to the database. It is currently in version 1.0, and we are continuing to work on it. This is a freelance project designed for a company with over 10 branches, and it is currently expanding.
