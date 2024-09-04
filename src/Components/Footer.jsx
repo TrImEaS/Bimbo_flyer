@@ -108,7 +108,7 @@ export default function Footer() {
           <a target="_blank" href="https://www.google.com/maps/place/Outlet+Panificados+%26+Golosinas/@-34.7134188,-58.4955985,20.75z/data=!4m14!1m7!3m6!1s0x95bcceddac97550b:0x7d8fff4e7986b7d9!2sBuenos+Aires+Central+Market!8m2!3d-34.7089502!4d-58.500517!16s%2Fg%2F120j3kz8!3m5!1s0x95bccf0be3a590ef:0x53f281e80b285e5f!8m2!3d-34.7133725!4d-58.4952592!16s%2Fg%2F11t29q39g4?entry=ttu" className="flex hover:scale-105 duration-300 items-center max-w-[400px] w-full p-4 rounded-lg shadow-lg border-2 gap-2">
             <img aria-hidden="true" alt="location icon" src={mobile_icon} className="w-14 h-14" />
             <div className="flex-1">
-              <h2 className="text-lg font-bold text-white">MERCADO CENTRAL LOCAL 121 GOLOSINAS</h2>
+              <h2 className="text-lg font-bold text-white">MERCADO CENTRAL LOCAL 123 GOLOSINAS</h2>
             </div>
           </a>
           <a target="_blank" href="https://www.google.com/maps/place/Federico+Lacroze+4171,+C1427+EDG,+Cdad.+Aut%C3%B3noma+de+Buenos+Aires/@-34.5864206,-58.4576819,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcb5e4f9e7f8c1:0xd5e95eec4a2db45!8m2!3d-34.586425!4d-58.455107!16s%2Fg%2F11c2gxsbvc?entry=ttu&g_ep=EgoyMDI0MDgyNi4wIKXMDSoASAFQAw%3D%3D" className="flex hover:scale-105 duration-300 items-center max-w-[400px] w-full p-4 rounded-lg shadow-lg border-2 gap-2">
@@ -180,6 +180,14 @@ export default function Footer() {
               <p className="text-xl">11-5502-7692</p>
             </div>
           </a>
+
+          <a target="_blank" href="https://wa.me/+5491171667568?text=Hola me comunico desde la pagina de OutletGolosinas." className="flex duration-300 hover:scale-105 items-center max-w-[400px] w-full gap-2 p-4 rounded-lg shadow-lg border-2">
+            <FaWhatsapp className="text-green-500 text-5xl font-bold"/>
+            <div className="flex-1">
+              <h2 className="text-lg font-bold">CABALLITO</h2>
+              <p className="text-xl">11-7166-7568</p>
+            </div>
+          </a>
         </section>
 
         {/*Mobile location/wpp */}
@@ -232,7 +240,7 @@ export default function Footer() {
             </a>
 
             <div className="flex-1">
-              <h2 className="text-lg font-bold text-white">MERCADO CENTRAL LOCAL 121 GOLOSINAS</h2>
+              <h2 className="text-lg font-bold text-white">MERCADO CENTRAL LOCAL 123 GOLOSINAS</h2>
             </div>
 
             <a className="hover:scale-110 duration-300 flex-0" target="_blank" href="https://wa.me/+5491157092539?text=Hola me comunico desde la pagina de OutletGolosinas.">
@@ -277,9 +285,9 @@ export default function Footer() {
               <h2 className="text-lg font-bold text-white">ROJAS 127, CABALLITO</h2>
             </div>
 
-            <span>
-              <FaWhatsapp className="text-green-500 text-opacity-25 text-5xl font-bold"/>
-            </span>
+            <a className="hover:scale-110 duration-300 flex-0" target="_blank" href="https://wa.me/+5491171667568?text=Hola me comunico desde la pagina de OutletGolosinas.">
+              <FaWhatsapp className="text-green-500 text-5xl font-bold"/>
+            </a>
           </div>
         </section>
       </div>
@@ -367,10 +375,7 @@ export default function Footer() {
             />
           </label>
 
-          <button
-            type="submit"
-            className="bg-white text-gray-600 w-full py-2 px-4 rounded hover:bg-blue-400 hover:text-white duration-300"
-          >
+          <button type="submit" className="bg-white text-gray-600 w-full py-2 px-4 rounded hover:bg-blue-400 hover:text-white duration-300">
             Enviar
           </button>
         </form>
