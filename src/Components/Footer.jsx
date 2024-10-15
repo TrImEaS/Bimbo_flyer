@@ -383,7 +383,7 @@ export default function Footer() {
 
       <article className="flex z-10 flex-col justify-center items-center w-full max-[780px]:max-w-[400px] max-w-[808px] bg-page-gray-light">
         <p className="font-bold text-center p-2 w-full pb-4 border-2 h-10 max-[780px]:h-14 px-5 text-sm rounded-lg">
-          LOS PRECIOS ESTAN SUJETOS A MODIFICACION SIN PREVIO AVISO
+          PRECIOS SUJETOS A MODIFICACION SIN PREVIO AVISO - IMAGENES A MODO ILUSTATIVO
         </p>
       </article>
 
