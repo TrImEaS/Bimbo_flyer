@@ -83,7 +83,7 @@ export default function Footer() {
   };
 
   return (
-    <section className="relative flex bg-blue-600 flex-col max-sm:px-5 justify-center items-center gap-3 w-full text-white py-5 ">
+    <section className="relative -tracking-wide flex bg-blue-600 flex-col max-sm:px-5 justify-center items-center gap-3 w-full text-white py-5 ">
       <div className="flex gap-3 z-10 max-[780px]:flex-col">
         {/*Locations*/}
         <section className="flex flex-col w-full gap-3 max-[785px]:hidden">
@@ -97,6 +97,12 @@ export default function Footer() {
             <img aria-hidden="true" alt="location icon" src={mobile_icon} className="w-14 h-14" />
             <div className="flex-1">
               <h2 className="text-lg font-bold text-white">VICTORINO DE LA PLAZA 1095, RAFAEL CASTILLO</h2>
+            </div>
+          </a>
+          <a target="_blank" href="https://www.google.com.ar/maps/place/Chavarr%C3%ADa+1658,+B1755CZH+Rafael+Castillo,+Provincia+de+Buenos+Aires/@-34.6979334,-58.6284094,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcc6c327f0efb7:0x92e242659f0a64ec!8m2!3d-34.6979378!4d-58.6258345!16s%2Fg%2F11g03p0wl8?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D" className="flex hover:scale-105 duration-300 items-center max-w-[400px] w-full p-4 rounded-lg shadow-lg border-2 gap-2">
+            <img aria-hidden="true" alt="location icon" src={mobile_icon} className="w-14 h-14" />
+            <div className="flex-1">
+              <h2 className="text-lg font-bold text-white">CHAVARRIA 1658, RAFAEL CASTILLO</h2>
             </div>
           </a>
           <a target="_blank" href="https://www.google.com/maps/place/Outlet+Panificados+%26+Golosinas/@-34.7134188,-58.4955985,20.75z/data=!4m14!1m7!3m6!1s0x95bcceddac97550b:0x7d8fff4e7986b7d9!2sBuenos+Aires+Central+Market!8m2!3d-34.7089502!4d-58.500517!16s%2Fg%2F120j3kz8!3m5!1s0x95bccf0be3a590ef:0x53f281e80b285e5f!8m2!3d-34.7133725!4d-58.4952592!16s%2Fg%2F11t29q39g4?entry=ttu" className="flex hover:scale-105 duration-300 items-center max-w-[400px] w-full p-4 rounded-lg shadow-lg border-2 gap-2">
@@ -146,6 +152,14 @@ export default function Footer() {
             <div className="flex-1">
               <h2 className="text-lg font-bold">RAFAEL CASTILLO</h2>
               <p className="text-xl">11-6429-2377</p>
+            </div>
+          </a>
+
+          <a target="_blank" href="https://wa.me/+5491139020074?text=Hola me comunico desde la pagina de OutletGolosinas." className="flex duration-300 hover:scale-105 items-center max-w-[400px] w-full gap-2 p-4 rounded-lg shadow-lg border-2">
+            <FaWhatsapp className="text-green-500 text-5xl font-bold"/>
+            <div className="flex-1">
+              <h2 className="text-lg font-bold">RAFAEL CASTILLO 2</h2>
+              <p className="text-xl">11-3902-0074</p>
             </div>
           </a>
 
@@ -216,6 +230,20 @@ export default function Footer() {
             </div>
 
             <a className="hover:scale-110 duration-300 flex-0" target="_blank" href="https://wa.me/+5491164292377?text=Hola me comunico desde la pagina de OutletGolosinas.">
+              <FaWhatsapp className="text-green-500 text-5xl font-bold"/>
+            </a>
+          </div>
+
+          <div className="flex duration-300 items-center max-w-[400px] w-full p-4 rounded-lg shadow-lg border-2 gap-2">
+            <a className="hover:scale-110 duration-300 flex-0" target="_blank" href="https://www.google.com.ar/maps/place/Chavarr%C3%ADa+1658,+B1755CZH+Rafael+Castillo,+Provincia+de+Buenos+Aires/@-34.6979334,-58.6284094,17z/data=!3m1!4b1!4m6!3m5!1s0x95bcc6c327f0efb7:0x92e242659f0a64ec!8m2!3d-34.6979378!4d-58.6258345!16s%2Fg%2F11g03p0wl8?entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D" >
+              <img aria-hidden="true" alt="location icon" src={mobile_icon} className="w-14 h-14" />
+            </a>
+
+            <div className="flex-1">
+              <h2 className="text-lg font-bold text-white">CHAVARRIA 1658, RAFAEL CASTILLO</h2>
+            </div>
+
+            <a className="hover:scale-110 duration-300 flex-0" target="_blank" href="https://wa.me/+5491139020074?text=Hola me comunico desde la pagina de OutletGolosinas.">
               <FaWhatsapp className="text-green-500 text-5xl font-bold"/>
             </a>
           </div>

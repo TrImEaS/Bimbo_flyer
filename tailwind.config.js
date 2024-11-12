@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        'body': ['Rubik', 'sans-serif']
+        'body': ['Rubik', 'sans-serif'],
+        'title': ['Agbalumo', 'cursive']
       }
     },
   },
