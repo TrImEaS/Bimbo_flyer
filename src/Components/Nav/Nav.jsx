@@ -7,18 +7,14 @@ export default function Nav() {
   const [title, setTitle] = useState([])
 
   useEffect(()=> {
-    fetch('https://outletgolosinas.com.ar/admin_flyer/admin_page/getFlyerData.php')
+    fetch('https://outletgolosinas.com.ar/admin_flyer/admin_page/getTitles.php')
     .then(res => { 
-      if(!res.ok) {
+      if(!res.ok) 
         throw error('Error al traer datos')
-      }
-      else{
-        return res.json()
-      }
+      
+      return res.json()
     })
-    .then(data => {
-      setTitle(data.title)
-    })
+    .then(data => setTitle(data[0].TITLE))
   },[])
 
   return (
