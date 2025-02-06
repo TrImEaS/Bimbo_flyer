@@ -135,6 +135,12 @@ export default function Footer() {
               <h2 className="text-lg font-bold text-white">ROJAS 127, CABALLITO</h2>
             </div>
           </a>
+          <a target="_blank" href="https://maps.app.goo.gl/suBfWpd144i5whCQ9" className="flex hover:scale-105 duration-300 items-center max-w-[400px] w-full p-4 rounded-lg shadow-lg border-2 gap-2">
+            <img aria-hidden="true" alt="location icon" src={mobile_icon} className="w-14 h-14" />
+            <div className="flex-1">
+              <h2 className="text-lg font-bold text-white">LA GRAN DULCE LOCAL 154, VILLA CELINA</h2>
+            </div>
+          </a>
         </section>
 
         {/*Whatsapps*/}
@@ -200,6 +206,13 @@ export default function Footer() {
             <div className="flex-1">
               <h2 className="text-lg font-bold">CABALLITO</h2>
               <p className="text-xl">11-7166-7568</p>
+            </div>
+          </a>
+          <a target="_blank" href="https://wa.me/+5491131829695?text=Hola me comunico desde la pagina de OutletGolosinas." className="flex duration-300 hover:scale-105 items-center max-w-[400px] w-full gap-2 p-4 rounded-lg shadow-lg border-2">
+            <FaWhatsapp className="text-green-500 text-5xl font-bold"/>
+            <div className="flex-1">
+              <h2 className="text-lg font-bold">LA GRAN DULCE</h2>
+              <p className="text-xl">11-3182-9695</p>
             </div>
           </a>
         </section>
@@ -314,6 +327,20 @@ export default function Footer() {
             </div>
 
             <a className="hover:scale-110 duration-300 flex-0" target="_blank" href="https://wa.me/+5491171667568?text=Hola me comunico desde la pagina de OutletGolosinas.">
+              <FaWhatsapp className="text-green-500 text-5xl font-bold"/>
+            </a>
+          </div>
+
+          <div className="flex duration-300 items-center max-w-[400px] w-full p-4 rounded-lg shadow-lg border-2 gap-2">
+            <a className="hover:scale-110 duration-300 flex-0" target="_blank" href="https://maps.app.goo.gl/suBfWpd144i5whCQ9" >
+              <img aria-hidden="true" alt="location icon" src={mobile_icon} className="w-14 h-14" />
+            </a>
+
+            <div className="flex-1">
+              <h2 className="text-lg font-bold text-white">LA GRAN DULCE LOCAL 154, VILLA CELINA</h2>
+            </div>
+
+            <a className="hover:scale-110 duration-300 flex-0" target="_blank" href="https://wa.me/+5491131829695?text=Hola me comunico desde la pagina de OutletGolosinas.">
               <FaWhatsapp className="text-green-500 text-5xl font-bold"/>
             </a>
           </div>

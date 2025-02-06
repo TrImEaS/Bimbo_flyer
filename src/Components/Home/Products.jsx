@@ -39,8 +39,6 @@ export default function Products() {
   const thirdRow = data.products.slice(4, 6)
   const fourthRow = data.products.slice(6, 8)
 
-  console.log(firstRow)
-
   return(
     <section 
       className="flex flex-col w-full items-center max-lg:w-full h-full min-h-[700px] bg-white"

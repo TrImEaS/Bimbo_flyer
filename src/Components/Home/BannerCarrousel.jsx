@@ -39,7 +39,7 @@ export default function BannerCarousel() {
   const shouldShowCarousel = bannersToShow.length > 0;
 
   return (
-    <div className='flex flex-col w-full items-center bg-yellow-400 gap-3 sm:pb-3'>
+    <div className='flex flex-col w-full items-center bg-[#1925d2] gap-3 sm:pb-3'>
       {shouldShowCarousel ? (
         <Carousel
           autoPlay
@@ -64,10 +64,10 @@ export default function BannerCarousel() {
           ))}
         </Carousel>
       ) : ''}
-      <a href='https://outletdegolosinas.ecu.red/?v=1724442209792#/place-detail-page' target='_blank' className="z-30 py-2 px-10 max-[770px]:my-2 max-sm:my-0 max-sm:mb-3 rounded-xl hover:scale-105 cursor-pointer duration-300 bg-red-500 flex flex-col text-center text-white text-lg sm:text-xl h-full w-fit sm:w-full sm:max-w-[400px]">
+      {/* <a href='https://outletdegolosinas.ecu.red/?v=1724442209792#/place-detail-page' target='_blank' className="z-30 py-2 px-10 max-[770px]:my-2 max-sm:my-0 max-sm:mb-3 rounded-xl hover:scale-105 cursor-pointer duration-300 bg-red-500 flex flex-col text-center text-white text-lg sm:text-xl h-full w-fit sm:w-full sm:max-w-[400px]">
         <span>HAZ CLICK AQUÍ Y EXPLORÁ</span>
         <span>NUESTRO CATALOGO MAYORISTA!</span>
-      </a>
+      </a> */}
     </div>
   );
 }
