@@ -16,7 +16,7 @@ export default function BannerCarousel() {
   }, []);
 
   const fetchBanners = () => {
-    fetch('https://outletgolosinas.com.ar/admin_flyer/admin_page/getBanners.php')
+    fetch('http://31.97.250.187/outletgolosinas/admin_flyer/admin_page/getBanners.php')
       .then(res => {
         if (!res.ok) {
           throw new Error('Error fetching banners');
@@ -64,10 +64,6 @@ export default function BannerCarousel() {
           ))}
         </Carousel>
       ) : ''}
-      {/* <a href='https://outletdegolosinas.ecu.red/?v=1724442209792#/place-detail-page' target='_blank' className="z-30 py-2 px-10 max-[770px]:my-2 max-sm:my-0 max-sm:mb-3 rounded-xl hover:scale-105 cursor-pointer duration-300 bg-red-500 flex flex-col text-center text-white text-lg sm:text-xl h-full w-fit sm:w-full sm:max-w-[400px]">
-        <span>HAZ CLICK AQUÍ Y EXPLORÁ</span>
-        <span>NUESTRO CATALOGO MAYORISTA!</span>
-      </a> */}
     </div>
   );
 }

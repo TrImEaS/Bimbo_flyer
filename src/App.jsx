@@ -7,7 +7,7 @@ export default function App() {
     <main className='relative flex flex-col items-center justify-between text-black min-h-screen min-w-[390px] h-full p-0 m-0 font-body'>
       <ScrollToTopOnLocationChange />
       <Routes>
-        <Route path="/" element={<Home/>}/>
+        <Route path="/outletgolosinas" element={<Home/>}/>
       </Routes>
     </main>
   )
