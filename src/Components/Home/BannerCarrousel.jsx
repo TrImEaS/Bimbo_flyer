@@ -16,7 +16,7 @@ export default function BannerCarousel() {
   }, []);
 
   const fetchBanners = () => {
-    fetch('http://31.97.250.187/outletgolosinas/admin_flyer/admin_page/getBanners.php')
+    fetch('https://outletgolosinas.com.ar/outletgolosinas/admin_flyer/admin_page/getBanners.php')
       .then(res => {
         if (!res.ok) {
           throw new Error('Error fetching banners');
