@@ -7,7 +7,7 @@ export default function Products() {
   const [title2, setTitle2] = useState('')
 
   useEffect(()=> {
-    fetch('https://outletgolosinas.com.ar/outletgolosinas/admin_flyer/admin_page/getFlyerData.php')
+    fetch('https://outletgolosinas.com.ar/admin_flyer/admin_page/getFlyerData.php')
     .then(res => { 
       if(!res.ok) 
         throw error('Error al traer datos')
@@ -16,7 +16,7 @@ export default function Products() {
     })
     .then(data => setData(data))
 
-    fetch('https://outletgolosinas.com.ar/outletgolosinas/admin_flyer/admin_page/getTitles.php')
+    fetch('https://outletgolosinas.com.ar/admin_flyer/admin_page/getTitles.php')
     .then(res => { 
       if(!res.ok) 
         throw error('Error al traer datos')

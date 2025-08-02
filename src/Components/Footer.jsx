@@ -54,7 +54,7 @@ export default function Footer() {
         });
 
         // Enviar los datos del formulario usando fetch
-        fetch('https://outletgolosinas.com.ar/outletgolosinas/admin_flyer/admin_page/admin_mail.php', {
+        fetch('https://outletgolosinas.com.ar/admin_flyer/admin_page/admin_mail.php', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
